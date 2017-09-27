@@ -21,6 +21,13 @@ TEST(TicTacToeBoardTest, tToggleTurn){
 	ASSERT_TRUE(testboard.toggleTurn() == O);
 	
 }
+
+/* 
+	*BUG: If you place a piece on a spot where there is already a piece it should return the piece already w/ no change to game state
+	*My implementation will toggle the player turn even if the attempted placement fails due to an existing piece.
+	*My test catches this bug by making sure the turn does not toggle on duplicate placement (lines 36-39)
+*/
+
 TEST(TicTacToeBoardTest, tPlacePiece){
 	TicTacToeBoard testboard;
 	ASSERT_TRUE(testboard.placePiece(2,3) == Invalid);
