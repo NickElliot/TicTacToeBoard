@@ -38,6 +38,14 @@ Piece TicTacToeBoard::toggleTurn()
  * is over, no more pieces can be placed so attempting to place a piece
  * should neither change the board nor change whose turn it is.
 **/ 
+
+/* 
+
+	*BUG: If you place a piece on a spot where there is already a piece it should return the piece already w/ no change to game state
+	*This implementation will toggle the player turn even if the attempted placement fails due to an existing piece.
+
+*/
+
 Piece TicTacToeBoard::placePiece(int row, int column)
 {
   if(row > 2 || column > 2){
