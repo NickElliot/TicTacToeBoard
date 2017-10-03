@@ -55,8 +55,8 @@ Piece TicTacToeBoard::placePiece(int row, int column)
   }
   if(getPiece(row, column) == Blank){
     board[row][column] = turn;
+    toggleTurn();
   }
-  toggleTurn();
   return board[row][column];
 }
 
@@ -81,7 +81,7 @@ Piece TicTacToeBoard::getWinner()
   
   if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != Blank){
     return board[0][0];
-  }else if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][0] != Blank) {
+  }else if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != Blank) {
 		return board[0][2];
 	} else if(board[0][0] == board[0][1] && board[0][0] == board[0][2] && board[0][0] != Blank) {
 		return board[0][0];
