@@ -40,7 +40,7 @@ Piece TicTacToeBoard::toggleTurn()
 **/ 
 
 /* 
-	*BUG: If you place a piece on a spot where there is already a piece it should return the piece already w/ no change to game state
+	*BUG REMOVED: If you place a piece on a spot where there is already a piece it should return the piece already w/ no change to game state
 	*This implementation will toggle the player turn even if the attempted placement fails due to an existing piece.
 */
 
