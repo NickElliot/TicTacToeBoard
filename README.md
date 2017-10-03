@@ -1,4 +1,4 @@
-![travisci status](https://travis-ci.org/NickElliot/TicTacToeBoard.svg)
+![travis-ci status](https://travis-ci.org/NickElliot/TicTacToeBoard.svg)
 
 # TicTacToeBoard
 
