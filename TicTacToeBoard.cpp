@@ -50,7 +50,7 @@ Piece TicTacToeBoard::placePiece(int row, int column)
   if(row > 2 || column > 2){
     return Invalid;
   }
-  if(getWinner() == X || getWinner() == O)){
+  if(getWinner() == X || getWinner() == O){
     return board[row][column];
   }
   if(getPiece(row, column) == Blank){
