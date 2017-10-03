@@ -1,3 +1,5 @@
+![travisci status](https://travis-ci.org/NickElliot/TicTacToeBoard.svg)
+
 # TicTacToeBoard
 
 ## Associated Enumerated Types
